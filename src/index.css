@@ -21,7 +21,6 @@ h2 {
 .mosquito-img {
   background-image: url(../src/images/mosquito.png);
   width: 100px;
-  height: 70px;
+  height: 100px;
   background-size: cover;
-  position: absolute;
 }
