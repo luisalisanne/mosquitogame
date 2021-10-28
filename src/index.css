@@ -1,15 +1,21 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Lacquer", cursive;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+h2 {
+  margin: 5px;
+  color: green;
+}
+
+.button {
+  background-color: greenyellow;
+  font-size: larger;
+  color: green;
+  border: none;
+  margin-left: 5px;
+  font-family: "Lacquer", cursive;
+  padding: 5px;
 }
 
 .mosquito-img {
