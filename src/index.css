@@ -16,4 +16,5 @@ h2 {
   margin-left: 5px;
   font-family: "Lacquer", cursive;
   padding: 5px;
+  cursor: pointer;
 }
