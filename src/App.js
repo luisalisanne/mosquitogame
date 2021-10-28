@@ -7,8 +7,8 @@ function App() {
   return (
     <div className="App">
       <h2>How many mosquitoes can you catch in 15 seconds?</h2>
-      <Button title="Play again"></Button>
       <Mosquito/>
+      <Button title="Play again" onClick={() => alert("clicked")}></Button>
     </div>
   );
 }
