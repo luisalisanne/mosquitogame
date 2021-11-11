@@ -7,7 +7,6 @@ import { useState, useEffect, useRef } from "react";
 function App() {
   const [counter, setCounter] = useState(0);
   const [time, setTime] = useState(15);
-  const [running, setGameState] = useState(false);
   const timeCallback = useRef();
 
   const startTimeout = () => {
@@ -25,7 +24,7 @@ function App() {
   useEffect(() => {
     startTimeout();
     return () => clearTimeout(timeCallback.current);
-  }, [running]);
+  }, []);
 
   useEffect(() => {
     if (time === 0) {
