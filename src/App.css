@@ -34,6 +34,7 @@ h2 {
 /** MOSQUITO STYLES */
 
 .mosquito-img {
+  cursor: pointer;
   background-image: url(../src/images/mosquito.png);
   width: 5rem;
   height: 5rem;
