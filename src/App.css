@@ -1,38 +1,55 @@
-.App {
+body {
+  margin: 0;
+  font-family: "Lacquer", cursive;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  margin: 5px;
+  color: green;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.button {
+  background-color: greenyellow;
+  font-size: larger;
+  color: green;
+  border: none;
+  font-family: "Lacquer", cursive;
+  padding: 5px;
+  cursor: pointer;
+  position: absolute;
+  top: 5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.counter {
+  position: absolute;
+  top: 0;
+  font-size: large;
 }
 
-.App-link {
-  color: #61dafb;
+/** MOSQUITO STYLES */
+
+.mosquito-img {
+  background-image: url(../src/images/mosquito.png);
+  width: 5rem;
+  height: 5rem;
+  background-size: cover;
+  position: absolute;
+  animation-name: mosquito-animation;
+  animation-duration: 15s;
 }
 
-@keyframes App-logo-spin {
+@keyframes mosquito-animation {
   from {
-    transform: rotate(0deg);
+    transform: translateY(0px);
   }
   to {
-    transform: rotate(360deg);
+    transform: translateY(-2000px);
   }
 }
+
+/** TREE STYLES  */
