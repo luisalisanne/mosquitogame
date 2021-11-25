@@ -1,18 +1,28 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 const Mosquito = ({ onClick }) => {
+  const [show, setShow] = useState(true);
+
   const mosquitoStyles = useRef({
     left: `${Math.floor(Math.random() * window.innerWidth)}px`,
     top: `${Math.floor(Math.random() * window.innerHeight + 200)}px`,
     position: "relative",
   });
-  return (
-    <div
-      onClick={onClick}
-      className="mosquito-img mosquito-animation"
-      style={mosquitoStyles.current}
-    ></div>
-  );
+
+  if (show) {
+    return (
+      <div
+        onClick={() => {
+          onClick();
+          setShow(false);
+        }}
+        className="mosquito-img mosquito-animation"
+        style={mosquitoStyles.current}
+      ></div>
+    );
+  } else {
+    return <div></div>;
+  }
 };
 
 export default Mosquito;
