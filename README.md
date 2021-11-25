@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Vscode editor
+
+Please install the prettier extension to autoformat the code. We added a vscode workspace config to the repo.
+
 ## Available Scripts
 
 In the project directory, you can run:

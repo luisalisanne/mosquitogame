@@ -1,22 +1,14 @@
-function Mosquito() {
-  const mosquitos = [...Array(20)];
-
+function Mosquito({ onClick }) {
   return (
-    <div>
-      {mosquitos.map((i, index) => {
-        return (
-          <div
-            key={index}
-            className="mosquito-img mosquito-animation"
-            style={{
-              left: `${Math.floor(Math.random() * window.innerWidth)}px`,
-              top: `${Math.floor(Math.random() * window.innerHeight + 200)}px`,
-              position: "relative",
-            }}
-          ></div>
-        );
-      })}
-    </div>
+    <div
+      onClick={onClick}
+      className="mosquito-img mosquito-animation"
+      style={{
+        left: `${Math.floor(Math.random() * window.innerWidth)}px`,
+        top: `${Math.floor(Math.random() * window.innerHeight + 200)}px`,
+        position: "relative",
+      }}
+    ></div>
   );
 }
 

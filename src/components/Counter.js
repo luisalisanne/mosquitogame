@@ -1,5 +1,5 @@
 const Counter = ({ number }) => {
-  return <p>{number}</p>;
+  return <p>{number} Points</p>;
 };
 
 export default Counter;
