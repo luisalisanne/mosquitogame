@@ -20,6 +20,7 @@ h2 {
 }
 
 .mosquito-img {
+  cursor: pointer;
   background-image: url(../src/images/mosquito.png);
   width: 100px;
   height: 100px;

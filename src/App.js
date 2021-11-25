@@ -21,6 +21,10 @@ function App() {
     startTimeout();
   };
 
+  const resetCounter = () => {
+    setCounter(0);
+  };
+
   useEffect(() => {
     startTimeout();
     return () => clearTimeout(timeCallback.current);
@@ -35,14 +39,25 @@ function App() {
   return (
     <div className="App">
       <h2>How many mosquitoes can you catch in {time} seconds?</h2>
-      <Mosquito />
       <Button
         title="Play again"
         onClick={() => {
           resetTimeout();
+          resetCounter();
         }}
       ></Button>
       <Counter number={counter}></Counter>
+
+      {[...Array(20)].map((i, index) => {
+        return (
+          <Mosquito
+            key={index}
+            onClick={() => {
+              setCounter(counter + 1);
+            }}
+          />
+        );
+      })}
     </div>
   );
 }
